@@ -1,0 +1,179 @@
+/*
+   CSS Review
+
+   Resume Style Sheet
+   Author: Malinda Johnson
+   Date:   September 5, 2020
+
+   Filename: styles.css
+   Supporting Files: index.html
+*/
+
+/********************  GLOBAL  *********************/
+
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: serif, Arial, Times;
+    color: #201f1f;
+}
+
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f5ebe2;
+}
+
+img {
+    width: 300px;
+}
+
+.left_justify {
+    float: left;
+    line-height: 0%;
+}
+
+.newspaper {
+    text-align: justify;
+}
+
+.right_bold {
+    float: right;
+    font-weight: bold;
+    line-height: 0%;
+}
+
+/********************  ABOUT / PROFILE  *********************/
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 2%;
+}
+
+header p {
+    opacity: 0.9;
+}
+
+h1 {
+    padding-top: 3%;
+    font-size: 3em;
+    text-shadow: 2px 2px #afacac;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #3b2205;
+}
+
+section {
+    padding: 2%;
+}
+
+/********************  PROJECTS / PORTFOLIO  *********************/
+
+.portfolio {
+    margin-top: 2%;
+    background-color: #e9d3b9;
+}
+
+.fig1 {
+    padding-left: 4%;
+    width: 28%;
+    float: left;
+
+}
+
+.fig2 {
+    width: 28%;
+    float: left;
+}
+
+.fig3 {
+    padding-right: 4%;
+    padding-bottom: 10%;
+    width: 28%;
+    float: left;
+}
+
+.fig1 h3,
+.fig2 h3,
+.fig3 h3 {
+    text-align: center;
+}
+
+/*	Special Pseudo Button to provide link back to specific sites	*/
+.linkButton {
+    background-color: #946228;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-left: 1%;
+    cursor: pointer;
+    padding: .5%;
+    border-top: .15em solid rgb(250, 250, 250);
+    /* Raised look */
+    border-left: .15em solid rgb(250, 250, 250);
+    border-bottom: .15em solid #160c01;
+    border-right: .15em solid #160c01;
+}
+
+.fig1 .linkButton,
+.fig2 .linkButton,
+.fig3 .linkButton {
+    position: relative;
+    /*  Get button centered */
+    left: 20%;
+}
+
+/*	Make link Button appear as pushed when clicked	*/
+.linkButton:focus {
+    outline-color: #666666;
+    outline-style: solid;
+    outline-width: 0.1em;
+}
+
+/********************  WORK EXPERIENCE  *********************/
+
+.work_experience {
+    clear: left;
+    background-color: #e9d3b9;
+}
+
+/********************  EDUCATION & CERTIFICATIONS  *********************/
+
+h4 {
+    padding-top: 2%;
+}
+
+/********************  CONTACT INFO / SOCIAL MEDIA  *********************/
+
+footer {
+    clear: both;
+    font-size: .80rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #b8b3ae;
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: -1.2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a {
+    color: #201f1f;
+    text-decoration: none;
+}
