@@ -3,7 +3,7 @@
 
    Resume Style Sheet
    Author: Malinda Johnson
-   Date:   September 5, 2020
+   Date:   September 14, 2020
 
    Filename: styles.css
    Supporting Files: index.html
@@ -16,7 +16,7 @@ body {
     border: 0;
     padding: 0;
     font-size: 1em;
-    font-family: serif, Arial, Times;
+    font-family: 'Ubuntu', sans-serif;
     color: #201f1f;
 }
 
@@ -51,6 +51,7 @@ img {
 header {
     text-align: center;
     text-transform: uppercase;
+    font-family: 'Source Code Pro', monospace, serif;
     font-weight: bold;
     margin: 2%;
 }
@@ -62,7 +63,8 @@ header p {
 h1 {
     padding-top: 3%;
     font-size: 3em;
-    text-shadow: 2px 2px #afacac;
+    text-shadow: 3px 3px #afacac;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 h2 {
