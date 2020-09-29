@@ -3,7 +3,7 @@
 
    Resume Style Sheet
    Author: Malinda Johnson
-   Date:   September 14, 2020
+   Date:   September 29, 2020
 
    Filename: styles.css
    Supporting Files: index.html
@@ -27,6 +27,90 @@ body {
     background-color: #f5ebe2;
 }
 
+/***    TOP NAV     ***/
+nav {
+    width: 100%;            /*  Stretch full-length of screen   */
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+/*  Style Top Unordered List for Postioning Sub-Menu    */
+.mainNav {
+    position: relative;     /*  So submenus can be positioned   */
+    list-style: none;       /*  Remove bullets                  */
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* Style for navigation list items specifies a border radius, margin, width, and padding */
+.mainNav li {
+    float: left;            /*  Push Top Navs against each other    */
+    white-space: nowrap;    /*  Make sure words stay on same line   */
+    width: 20%;             /*  Give each Nav button same width     */
+    border-radius: 0;
+    cursor: pointer;        /*  Use for drop-down menu              */
+}
+
+/* Style for navigation links specifies display, padding, and removal of underlines */
+.mainNav li a {
+    display: block;     
+    margin-top: 8%;
+    color: #FFFFFF;
+    text-align: center;
+	font-size: 1.25em;
+    text-decoration: none;
+    background-color: #946228;
+    border-top: .15em solid rgb(250, 250, 250);
+    /* Raised look */
+    border-left: .15em solid rgb(250, 250, 250);
+    border-bottom: .15em solid #160c01;
+    border-right: .15em solid #160c01;
+}
+
+/* Style rules for pseudo-classes */
+
+.mainNav li a:link {
+	font-size: 1.25em;
+}
+
+.mainNav li a:visited {
+	font-size: 1.25em;
+}
+
+.mainNav li a:hover {
+	color: #2e1d03;
+	font-size: 1.25em;
+}
+
+.mainNav li a:active {
+	font-size: 1.25em;
+}
+
+/***    SECOND LEVEL NAV     ***/
+.subNav {
+    position: absolute;     /*  Absolutely open BELOW calling menu  */
+    display: none;          /*  Hide until hover                    */
+    top: 100%;              /*  Push up against Top Nav             */
+}
+
+.subNav li {
+    float: none;            /*  Display exactly at occurrence       */
+    
+}
+
+.subNav li:hover {
+    display: block;         /*  Display vertically on hover         */
+    background: #57390c;
+}
+
+.mainNav li:hover ul {
+    display: block;
+}
+
+/***    GENERAL FORMATTING    ***/
+
 img {
     width: 300px;
 }
@@ -49,6 +133,7 @@ img {
 /********************  ABOUT / PROFILE  *********************/
 
 header {
+    clear: left;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Source Code Pro', monospace, serif;
