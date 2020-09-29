@@ -48,7 +48,7 @@ nav {
 .mainNav li {
     float: left;            /*  Push Top Navs against each other    */
     white-space: nowrap;    /*  Make sure words stay on same line   */
-    width: 19.85%;             /*  Give each Nav button same width     */
+    width: 20%;             /*  Give each Nav button same width     */
     border-radius: 0;
     cursor: pointer;        /*  Use for drop-down menu              */
 }
@@ -62,11 +62,11 @@ nav {
 	font-size: 1.25em;
     text-decoration: none;
     background-color: #946228;
-    border-top: .15em solid rgb(250, 250, 250);
     /* Raised look */
+    /*border-top: .15em solid rgb(250, 250, 250);
     border-left: .15em solid rgb(250, 250, 250);
     border-bottom: .15em solid #160c01;
-    border-right: .15em solid #160c01;
+    border-right: .15em solid #160c01;*/
     width: 100%;        /*  Tutorial had 130px?     */ 
 }
 
@@ -110,11 +110,10 @@ nav {
     background-color: #bb9a66;
     padding: 0;
     margin: 0;
-    width: 100%;        /*  Tutorial had 130px?     */ 
-    border-top: 0em solid rgb(250, 250, 250);   /*  Remove top  */
-    /* Raised look */
+    width: 97.13%;        /*  Tutorial had 130px?     */ 
+    /* Boxed look */
     border-left: .15em solid #160c01;
-    border-bottom: .15em solid #160c01;
+    border-bottom: .13em solid #160c01;
     border-right: .15em solid #160c01;
 }
 
