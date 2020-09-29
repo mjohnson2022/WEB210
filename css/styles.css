@@ -41,14 +41,14 @@ nav {
     list-style: none;       /*  Remove bullets                  */
     padding: 0;
     margin: 0;
-    
+    line-height: 1.5;
 }
 
 /* Style for navigation list items specifies a border radius, margin, width, and padding */
 .mainNav li {
     float: left;            /*  Push Top Navs against each other    */
     white-space: nowrap;    /*  Make sure words stay on same line   */
-    width: 20%;             /*  Give each Nav button same width     */
+    width: 19.85%;             /*  Give each Nav button same width     */
     border-radius: 0;
     cursor: pointer;        /*  Use for drop-down menu              */
 }
@@ -67,6 +67,7 @@ nav {
     border-left: .15em solid rgb(250, 250, 250);
     border-bottom: .15em solid #160c01;
     border-right: .15em solid #160c01;
+    width: 100%;        /*  Tutorial had 130px?     */ 
 }
 
 /* Style rules for pseudo-classes */
@@ -91,8 +92,12 @@ nav {
 /***    SECOND LEVEL NAV     ***/
 .subNav {
     position: absolute;     /*  Absolutely open BELOW calling menu  */
-    display: none;          /*  Hide until hover                    */
-    top: 100%;              /*  Push up against Top Nav             */
+    list-style: none;       /*  Remove bullets                      */
+    width: 100%;  
+    padding: 0;             /*  Keep directly below                 */
+    margin: 0;              /*  Prevent off-center                  */
+    left: -999em;           /*  Hide until hover; don't use display:*/
+    /*  none because of accessibility issues*/
 }
 
 .subNav li {
@@ -100,13 +105,28 @@ nav {
     
 }
 
-.subNav li:hover {
-    display: block;         /*  Display vertically on hover         */
-    background: #57390c;
+.subNav li a {
+    font-size: 1.15em;
+    background-color: #bb9a66;
+    padding: 0;
+    margin: 0;
+    width: 100%;        /*  Tutorial had 130px?     */ 
+    border-top: 0em solid rgb(250, 250, 250);   /*  Remove top  */
+    /* Raised look */
+    border-left: .15em solid #160c01;
+    border-bottom: .15em solid #160c01;
+    border-right: .15em solid #160c01;
+}
+
+.subNav li a:hover {
+    display: block;         /*  Display vertically on hover         */ 
+    
 }
 
 .mainNav li:hover ul {
     display: block;
+    left: auto;             /*  Unhide -- bring back in position    */
+    font-size: .95em;
 }
 
 /***    GENERAL FORMATTING    ***/
